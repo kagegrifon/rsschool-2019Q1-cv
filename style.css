@@ -1,0 +1,71 @@
+.centering-wrapper {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.gray-block {
+  height: 40px;
+  background-color: #29373f;
+}
+
+
+.name {
+  background-color: #3e4f58;
+}
+
+.name .content-wrapper {
+  position: relative;
+  height: 180px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.name .left-side-block,
+.name .right-side-block {
+  width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.name .left-side-block {
+  padding-left: 50px;
+}
+
+.name .right-side-block {
+  align-items: center;
+}
+
+.name h1 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.name .position {
+  margin-top: 0;
+  color: #93a0a8;
+}
+
+.name .personal-photo {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.name .personal-photo img {
+  position: relative;
+  left: 58%;
+  top: -28px;
+  transform: translateX(-50%);
+}
