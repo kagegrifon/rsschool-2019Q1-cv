@@ -262,3 +262,110 @@ header .gray-block {
 .skills ul li.team::before {
   background-image: url(assets/team-icon.png);
 }
+
+
+
+
+
+.chronicle {
+  position: relative;
+
+  list-style: none;
+  border-left: 2px solid #aaaaaa;
+}
+
+ .chronicle .line .point-name {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.chronicle .line .point-description {
+  margin-bottom: 24px;
+}
+
+.chronicle .line .period {
+  margin-bottom: 12px;
+}
+
+.chronicle .line .point-name::before,
+.chronicle .line .point-name::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: block;
+
+  border-radius: 50%;
+}
+
+.chronicle .line .point-name::before {
+  left: -60px;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: #dddddd;;
+}
+
+.chronicle .line .point-name::after {
+  left: -50px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: #aaaaaa;
+}
+
+
+
+
+
+.hobbies {
+  width: 100%;
+}
+
+.hobbies ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+
+  list-style: none;
+}
+
+.hobbies ul li {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+
+  line-height: 200px;
+  text-align: center;
+
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  background-color: #cccccc;
+}
+
+.hobbies ul li.yoga {
+  background-image: url(assets/yoga-icon.png);
+}
+
+.hobbies ul li.voleyball {
+  background-image: url(assets/volleyball-icon.png);
+}
+
+.hobbies ul li.guitar {
+  background-image: url(assets/acoustic-guitar-icon.png);
+}
+
+.hobbies ul li.outdoor {
+  background-image: url(assets/outdoor-icon.png);
+}
+
+.hobbies ul li.traveling {
+  background-image: url(assets/travel-icon.png);
+}
