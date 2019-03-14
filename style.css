@@ -369,3 +369,74 @@ header .gray-block {
 .hobbies ul li.traveling {
   background-image: url(assets/travel-icon.png);
 }
+
+
+
+
+
+.social {
+  padding: 30px 0;
+  background-color: #dddddd;
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.social li.link {
+  display: inline-block;
+}
+
+.social li.link a {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  color: transparent;
+}
+
+.social li.facebook a {
+  background-image: url(assets/facebook-icon.png);
+}
+
+.social li.facebook a:hover {
+  background-image: url(assets/facebook-icon-hover.png);
+}
+
+.social li.vk a {
+  background-image: url(assets/vk-icon.png);
+}
+
+.social li.vk a:hover {
+  background-image: url(assets/vk-icon-hover.png);
+}
+
+.social li.linkedin a {
+  background-image: url(assets/linkedin-icon.png);
+}
+
+.social li.linkedin a:hover {
+  background-image: url(assets/linkedin-icon-hover.png);
+}
+
+
+
+
+
+footer {
+  padding: 10px 0;
+  background-color: #b9c4ca;
+}
+
+footer p {
+  font-size: 14px;
+  color: #576468;
+}
