@@ -1,0 +1,442 @@
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 1.5;
+}
+
+h2 {
+  color: #3e4f58;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.centering-wrapper {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.flex-wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+header .gray-block {
+  height: 40px;
+  background-color: #29373f;
+}
+
+.name {
+  background-color: #3e4f58;
+}
+
+.name .flex-wrapper {
+  height: 180px;
+}
+
+.name .left-side-block,
+.name .right-side-block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.name .right-side-block {
+  align-items: center;
+}
+
+.name h1 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.name .position {
+  margin-top: 0;
+  color: #93a0a8;
+}
+
+.name .personal-photo {
+  width: 150px;
+  height: 150px;
+
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.name .personal-photo img {
+  position: relative;
+  left: 58%;
+  top: -28px;
+  transform: translateX(-50%);
+}
+
+
+
+
+
+.purpose {
+  padding: 20px 0;
+  background-color: #b9c4ca;
+}
+
+.purpose h2 {
+  margin-top: 0;
+}
+
+.purpose .content {
+  font-size:  14px;
+  color: #3e4f58;
+}
+
+
+
+
+
+.common-block {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255, 1) 0%,
+    rgba(255,255,255, 1) 34%,
+    rgba(246,246,246 ,1) 34%
+  );
+  color: #576468;
+}
+
+.common-block .left-side-block,
+.common-block .right-side-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.common-block .left-side-block {
+  width: 34%;
+  padding-right: 35px;
+
+  background-color: #ffffff;
+}
+
+.common-block .right-side-block {
+  width: 66%;
+  padding-left: 50px;
+
+  background-color: #f6f6f6;  
+}
+
+
+
+
+
+.personal table {
+  border-collapse: collapse;
+}
+ 
+.personal td {
+  padding: 15px;
+  border-bottom: 2px solid #c5c6c8
+}
+
+.personal tr + tr td {
+  margin-top: 15px;
+}
+
+.personal td:first-child {
+  font-weight: bold;
+}
+
+.personal td:first-child {
+  font-weight: bold;
+}
+
+
+
+
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h2 {
+  margin-bottom: 0;
+}
+
+.skills ul {
+  margin-top: 0;
+  padding-left: 0;
+
+  list-style: none;  
+}
+
+.skills ul li {
+  position: relative;
+
+  display: inline-block;
+  width: 100px;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+
+.skills ul li.team {
+  display: inline-block;
+  width: auto;
+}
+
+.skills ul li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 30px;
+  height: 30px;
+  
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.skills ul li.js::before {
+  background-image: url(assets/js-icon.png);
+}
+
+.skills ul li.html::before {
+  background-image: url(assets/html-icon.png);
+}
+
+.skills ul li.css::before {
+  background-image: url(assets/css-icon.png);
+}
+
+.skills ul li.scss::before {
+  background-image: url(assets/sass-icon.png);
+}
+
+.skills ul li.npm::before {
+  background-image: url(assets/npm-icon.png);
+}
+
+.skills ul li.git::before {
+  background-image: url(assets/git-icon.png);
+}
+
+.skills ul li.team::before {
+  background-image: url(assets/team-icon.png);
+}
+
+
+
+
+
+.chronicle {
+  position: relative;
+
+  list-style: none;
+  border-left: 2px solid #aaaaaa;
+}
+
+ .chronicle .line .point-name {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.chronicle .line .point-description {
+  margin-bottom: 24px;
+}
+
+.chronicle .line .period {
+  margin-bottom: 12px;
+}
+
+.chronicle .line .point-name::before,
+.chronicle .line .point-name::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: block;
+
+  border-radius: 50%;
+}
+
+.chronicle .line .point-name::before {
+  left: -60px;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: #dddddd;;
+}
+
+.chronicle .line .point-name::after {
+  left: -50px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: #aaaaaa;
+}
+
+
+
+
+
+.hobbies {
+  width: 100%;
+}
+
+.hobbies ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+
+  list-style: none;
+}
+
+.hobbies ul li {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+
+  line-height: 200px;
+  text-align: center;
+
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  background-color: #cccccc;
+}
+
+.hobbies ul li.yoga {
+  background-image: url(assets/yoga-icon.png);
+}
+
+.hobbies ul li.voleyball {
+  background-image: url(assets/volleyball-icon.png);
+}
+
+.hobbies ul li.guitar {
+  background-image: url(assets/acoustic-guitar-icon.png);
+}
+
+.hobbies ul li.outdoor {
+  background-image: url(assets/outdoor-icon.png);
+}
+
+.hobbies ul li.traveling {
+  background-image: url(assets/travel-icon.png);
+}
+
+
+
+
+
+.social {
+  padding: 30px 0;
+  background-color: #dddddd;
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.social li.link {
+  display: inline-block;
+}
+
+.social li.link a {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  color: transparent;
+}
+
+.social li.facebook a {
+  background-image: url(assets/facebook-icon.png);
+}
+
+.social li.facebook a:hover {
+  background-image: url(assets/facebook-icon-hover.png);
+}
+
+.social li.vk a {
+  background-image: url(assets/vk-icon.png);
+}
+
+.social li.vk a:hover {
+  background-image: url(assets/vk-icon-hover.png);
+}
+
+.social li.linkedin a {
+  background-image: url(assets/linkedin-icon.png);
+}
+
+.social li.linkedin a:hover {
+  background-image: url(assets/linkedin-icon-hover.png);
+}
+
+
+
+
+
+footer {
+  padding: 10px 0;
+  background-color: #b9c4ca;
+}
+
+footer p {
+  font-size: 14px;
+  color: #576468;
+}
